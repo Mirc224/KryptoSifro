@@ -1,0 +1,68 @@
+Introduction
+
+Cryptography has a long and fascinating history. The most complete
+nontechnical account of the subject is Kahn's The Codebreakers. This book
+traces cryptography from its initial and limited use by the Egyptians some
+4000 years ago, to the twentieth century where it played a crucial role in
+the outcome of both world wars. Completed in 1963, Kahn's book covers those
+aspects of the history which were most significant (up to that time) to the
+development of the subject. The predominant practitioners of the art were
+those associated with the military, the diplomatic service and government in
+general. Cryptography was used as a tool to protect national secrets and
+strategies.
+
+The proliferation of computers and communications systems in the 1960s
+brought with it a demand from the private sector for means to protect
+information in digital form and to provide security services. Beginning with
+the work of Feistel at IBM in the early 1970s and culminating in 1977 with
+the adoption as a U.S. Federal Information Processing Standard for
+encrypting unclassified information, DES, the Data Encryption Standard, is
+the most wellknown cryptographic mechanism in history. It remains the
+standard means for securing electronic commerce for many financial
+institutions around the world.
+
+The most striking developmentin the history of cryptographycame in 1976 when
+Diffie and Hellman published New Directions in Cryptography. This paper
+introduced the revolutionary concept of publickey cryptography and also
+provided a new and ingenious method for key exchange, the security of which
+is based on the intractability of the discrete logarithm problem. Although
+the authors had no practical realization of a publickey encryption scheme
+at the time, the idea was clear and it generated extensive interest and
+activity in the cryptographic community. In 1978 Rivest, Shamir, and Adleman
+discovered the first practical publickey encryption and signature scheme,
+now referred to as RSA. The RSA scheme is based on another hard mathematical
+problem, the intractability of factoring large integers. This application of
+a hard mathematical problem to cryptography revitalized efforts to find
+more efficient methods to factor. The 1980s saw major advances in this area
+but none which rendered the RSA system insecure. Another class of powerful
+and practical publickey schemes was found by ElGamal in 1985. These are
+also based on the discrete logarithm problem.
+
+One of the most significant contributions provided by publickey
+cryptography is the digital signature. In 1991 the first international
+standard for digital signatures (ISO/IEC 9796) was adopted. It is based on
+the RSA publickey scheme. In 1994 the U.S. Government adopted the Digital
+Signature Standard, a mechanism based on the ElGamal publickey scheme.
+
+The search for new publickey schemes, improvements to existing
+cryptographic mechanisms, and proofs of security continues at a rapid
+pace. Various standards and infrastructures involving cryptography are
+being put in place. Security products are being developed to address the
+security needs of an information intensive society.
+
+The purpose of this book is to give an up-to-date treatise of the
+principles, techniques, and algorithms of interest in cryptographic
+practice. Emphasis has been placed on those aspects which are most practical
+and applied. The reader will be made aware of the basic issues and pointed
+to specific related research in the literature where more indepth
+discussions can be found. Due to the volume of material which is covered,
+most results will be stated without proofs. This also serves the purpose of
+not obscuring the very applied nature of the subject. This book is intended
+for both implementers and researchers. It describes algorithms, systems, and
+their interactions.
+
+Chapter 1 is a tutorial on the many and various aspects of cryptography. It
+does not attempt to convey all of the details and subtleties inherent to the
+subject. Its purpose is to introduce the basic issues and principles and to
+point the reader to appropriate chapters in the book for more comprehensive
+treatments. Specific techniques are avoided in this chapter.
