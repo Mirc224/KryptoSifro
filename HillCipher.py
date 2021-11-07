@@ -42,9 +42,14 @@ def get_suitable_matrix(text: str, matrix_size: int):
 # PCPOVZOJYEJXJLVINLJMIAVAVEUKZLERO => DRAHYJURAJUZZAMNONECHODMAMDRUHEHO
 # NMUSMRFJGRWSWVKKDJKYTYTNSVMOJW => DRAHYJURAJBOLASOMHLUPAODPUSTMI
 # DRAHYJURAJ
-plain_text = 'DRAHYJURAJ'
+plain_text =          'DRAHYJURAJ'
+known_ciphered_text = 'BALQTGFGYN'
+known_ciphered_text = 'PCPOVZOJYE'
 known_ciphered_text = 'NMUSMRFJGR'
 matrix_size = 3
+
+whole_ciphered_text = "BALQTGFGYNFUHVLOIVCGPRZJUTHGWOVWCWAJGWN"
+whole_ciphered_text = "PCPOVZOJYEJXJLVINLJMIAVAVEUKZLERO"
 whole_ciphered_text = "NMUSMRFJGRWSWVKKDJKYTYTNSVMOJW"
 
 plain_text_matrix = get_suitable_matrix(plain_text, matrix_size)

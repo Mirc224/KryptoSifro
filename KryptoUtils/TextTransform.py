@@ -22,9 +22,7 @@ def itoc(i: int) -> chr:
 
 
 def text_to_dec_ASCII(text: str) -> list:
-    result = []
-    for ch in text:
-        result.append(ctoi(ch))
+    result = list(map(ctoi, text))
     return result
 
 
@@ -39,10 +37,8 @@ def clear_text(text: str, ignoredChars: str = None) -> str:
 
 
 def dec_ASCII_to_text(numberArray: list) -> str:
-    result = ''
-    for i in numberArray:
-        result += itoc(i)
-    return result
+    result = map(itoc, numberArray)
+    return ''.join(result)
 
 
 def split_text_to_n_texts(text: str, num_of_splits: int) -> list:
