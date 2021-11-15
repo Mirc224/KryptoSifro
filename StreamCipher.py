@@ -72,7 +72,7 @@ def crackPassword(path:str):
 
     base_filename = f'DesifrovaneTexty/{base_file}'
 
-    for i in range(217728):
+    for i in range(1, 100000):
         num_generator.setSeed(i)
         password = generate_password(encrypted_text, num_generator)
         decrypted_text = decrypt(encrypted_text, password, 26)
