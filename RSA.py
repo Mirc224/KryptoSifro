@@ -112,47 +112,8 @@ def dict_factorize(n):
             return (prime, 1), (n//prime, 1)
     return None, None
 
-# primes = []
-# f = open('Resources/primes2.txt', 'r')
-# primes = [int(next(f)) for x in range(1000)]
-#
-# p = 71
-# q = 73
-# #primes = [int(next(f)) for x in range(1000)]
-# f.close()
-# n = p * q
-#
-# fi_n = (p - 1) * (q - 1)
-# x = 123
-# # print(pow(x, fi_n, n))
-#
-# for p in primes:
-#     e = p
-#     if gcd(e, fi_n) == 1:
-#         break
-#
-# print(f'Verejny kluc: ({n}, {e})')
-# d = mod_inverse(e, fi_n)
-#
-# print(f'Privatny kluc: ({n}, {d})')
-#
-# # x = 123
-# #
-# # y = pow(x, e, n)
-# #
-# # print(y)
-# #
-# # xx = pow(y,d,n)
-# # print(xx)
-#
-# print(factorize(n))
 res = []
-# with open('Primes/all_primes.txt', 'r') as file:
-#     primes = list(map(int, file.readlines()))
-# with open('SifrovaneTexty/sprava_RSA.enc', "rb") as f:
-#     while (bytes := f.read(1)):
-#         cislo = int.from_bytes(bytes, byteorder="little")
-#         res.append(cislo.decode('iso-8859-2'))
+
 n_list = [13169004533,
     1690428486610429,
     56341958081545199783,
@@ -174,10 +135,10 @@ y_list = [6029832903,
 #     xx = pow(y_list[i], d, n)
 #     print(f'p:{p}  q:{q}  d:{d}  x:{xx}')
 
-
-p, q, d = crack(n_list[-1], e, custom_factorize)
-xx = pow(y_list[-1], d, n_list[-1])
-print(f'n:{n_list[-1]}  e:{e}  y:{y_list[-1]}  p:{p}  q:{q}  d:{d}  x:{xx}')
+for i in range(len(n_list)):
+    p, q, d = crack(n_list[i], e, custom_factorize)
+    xx = pow(y_list[i], d, n_list[i])
+    print(f'n:{n_list[i]}  e:{e}  y:{y_list[i]}  p:{p}  q:{q}  d:{d}  x:{xx}')
 # for i in range(len(n_list)):
 #     p, q, d = crack(n_list[i], e, custom_factorize)
 #     xx = pow(y_list[i], d, n_list[i])
